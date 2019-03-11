@@ -1,0 +1,45 @@
+Developing Data Products Wk 4 Proj
+========================================================
+author: Sng Jun Qiang
+date: 11 March 2019
+autosize: true
+
+Overview
+========================================================
+
+As part of the Developing Data Products Course in Coursera Data Science Specialization track, an RStudio shiny application is developed.
+
+The application provides users with exploration view of the mtcars dataset. It allows comparison between the label variable mpg and the various predictive variables. Regression models are developed for each of the variables against mpg.
+
+The Application
+========================================================
+
+The application included:
+
+1. Variables for Selection to compare with mpg.
+2. Tab to select to view reactive output display of the plot or the regression model.
+3. The server.R and ui.R codes are posted in github at: https://github.com/JQDATASCIENCE/Developing-Data-Products-Wk-4-Proj
+4. The App can be found at: https://jqdatascience.shinyapps.io/mtcars/
+
+The Data
+========================================================
+
+The data mtcars has 32 observations and 11 numberic variables.
+
+```{r, echo=FALSE}
+MT_CARS <- mtcars
+str(MT_CARS)
+```
+
+Summary
+========================================================
+
+The exploration shows that the majority of the variables form negative regression with mpg except for the following variables which forms negative regression with mpg:
+
+1. Rear Axle Ration
+2. 1/4 Mile Time
+3. Engine
+4. Transmission
+5. Num. of Forward Gears
+
+Hence, these information provided us with a initial fuel efficiency overview of the relationships between mpg and the other variables. Further models such as mutlivariable regression can be explored to understand the various variables importance level on mpg so to provide a more concrete analysis.
